@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<items>
+<item type="osb">
+<amountThreshold>20000</amountThreshold>
+<linum>756546050</linum>
+<transfer_date>16.04.2012</transfer_date>
+<payment_type/>
+<payment_date>13.04.2012</payment_date>
+<osb>9038</osb>
+<osb_old>5281</osb_old>
+<filial>00008</filial>
+<payer_info>Иванов Петр Сидорович</payer_info>
+<fio_payer>Сидор Петрович</fio_payer>
+<cashier>00120</cashier>
+<document_number>000269</document_number>
+<payer_info>Гаджиева Татьяна Анатольевна</payer_info>
+<payer_address>москва коштоянца 20-1-31</payer_address>
+<bik>044525388</bik>
+<corr_acc>30101810800000000388</corr_acc>
+<settle_acc>40602810020100000001</settle_acc>
+<sum>10000</sum>
+<service_commission>0</service_commission>
+<userName>СмирноваГ.А., вн. 43-360</userName>
+<inn>7726639745</inn>
+<okato/>
+<bankCityName> Московского </bankCityName>
+<kbk/>
+<receiver_name>УФК ПО КУРСКОЙ ОБЛАСТИ (ОСП ПО РЫЛЬСКОМУ РАЙОНУ УФССП РОССИИ ПО КУРСКОЙ ОБЛАСТИ )</receiver_name>
+<sum_rub>1000</sum_rub>
+<sum_cent>0</sum_cent>
+<pay_order_sum_rub>100</pay_order_sum_rub>
+<pay_order_sum_cent>0</pay_order_sum_cent>
+<single_pay_order>yes</single_pay_order>
+<order_num>000827</order_num>
+<order_transfer_date>23.04.2012</order_transfer_date>
+<return_date>23.04.2012</return_date>
+<transfer_date>23.04.2012</transfer_date>
+<order_bik>044525225</order_bik>
+<order_inn/>
+<order_corr_acc>30101810400000000225</order_corr_acc>
+<order_settle_acc>47422810200000500936</order_settle_acc>
+<order_kbk/>
+<order_kpp/>
+<order_okato/>
+<order_receiver_name/>
+<assigner>А.В. Новиков</assigner>
+<assignerPosition>Начальник отдела проведения платежей населения в пользу организаций</assignerPosition>
+<assignerPhone></assignerPhone>
+<hideImages>true</hideImages>
+</item>
+</items>
+</root>

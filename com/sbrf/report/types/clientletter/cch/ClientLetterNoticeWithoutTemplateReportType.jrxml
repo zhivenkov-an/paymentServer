@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<queryString language="xPath">
+		<![CDATA[/root/items/item]]>
+	</queryString>
+	<field name="type" class="java.lang.String">
+		<fieldDescription><![CDATA[@type]]></fieldDescription>
+	</field>
+	<field name="osb" class="java.lang.String">
+		<fieldDescription><![CDATA[osb]]></fieldDescription>
+	</field>
+	<field name="osb_name" class="java.lang.String">
+		<fieldDescription><![CDATA[osb_name]]></fieldDescription>
+	</field>
+	<field name="osb_old" class="java.lang.String">
+		<fieldDescription><![CDATA[osb_old]]></fieldDescription>
+	</field>
+	<field name="filial" class="java.lang.String">
+		<fieldDescription><![CDATA[filial]]></fieldDescription>
+	</field>
+	<field name="document_number" class="java.lang.String">
+		<fieldDescription><![CDATA[document_number]]></fieldDescription>
+	</field>
+	<field name="sum_rub" class="java.lang.String">
+		<fieldDescription><![CDATA[sum_rub]]></fieldDescription>
+	</field>
+	<field name="sum_cent" class="java.lang.String">
+		<fieldDescription><![CDATA[sum_cent]]></fieldDescription>
+	</field>
+	<field name="payment_date" class="java.lang.String">
+		<fieldDescription><![CDATA[payment_date]]></fieldDescription>
+	</field>
+	<field name="transfer_date" class="java.lang.String">
+		<fieldDescription><![CDATA[transfer_date]]></fieldDescription>
+	</field>
+	<field name="bik" class="java.lang.String">
+		<fieldDescription><![CDATA[bik]]></fieldDescription>
+	</field>
+	<field name="corr_acc" class="java.lang.String">
+		<fieldDescription><![CDATA[corr_acc]]></fieldDescription>
+	</field>
+	<field name="settle_acc" class="java.lang.String">
+		<fieldDescription><![CDATA[settle_acc]]></fieldDescription>
+	</field>
+	<field name="inn" class="java.lang.String">
+		<fieldDescription><![CDATA[inn]]></fieldDescription>
+	</field>
+	<field name="kbk" class="java.lang.String">
+		<fieldDescription><![CDATA[kbk]]></fieldDescription>
+	</field>
+	<field name="okato" class="java.lang.String">
+		<fieldDescription><![CDATA[okato]]></fieldDescription>
+	</field>
+	<field name="receiver_name" class="java.lang.String">
+		<fieldDescription><![CDATA[receiver_name]]></fieldDescription>
+	</field>
+	<field name="assigner" class="java.lang.String">
+		<fieldDescription><![CDATA[assigner]]></fieldDescription>
+	</field>
+	<field name="payer_info" class="java.lang.String">
+		<fieldDescription><![CDATA[payer_info]]></fieldDescription>
+	</field>
+	<field name="cashier" class="java.lang.String">
+		<fieldDescription><![CDATA[cashier]]></fieldDescription>
+	</field>
+	<field name="pay_order_sum_rub" class="java.lang.String">
+		<fieldDescription><![CDATA[pay_order_sum_rub]]></fieldDescription>
+	</field>
+	<field name="pay_order_sum_cent" class="java.lang.String">
+		<fieldDescription><![CDATA[pay_order_sum_cent]]></fieldDescription>
+	</field>
+	<field name="assignerPosition" class="java.lang.String">
+		<fieldDescription><![CDATA[assignerPosition]]></fieldDescription>
+	</field>
+	<field name="order_num" class="java.lang.String">
+		<fieldDescription><![CDATA[order_num]]></fieldDescription>
+	</field>
+	<field name="payer_address" class="java.lang.String">
+		<fieldDescription><![CDATA[payer_address]]></fieldDescription>
+	</field>
+	<field name="kpp" class="java.lang.String">
+		<fieldDescription><![CDATA[kpp]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="98" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="48" splitType="Stretch">
+			<staticText>
+				<reportElement x="21" y="0" width="534" height="48"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ПЦП «ЦЕНТР СОПРОВОЖДЕНИЯ КЛИЕНТСКИХ ОПЕРАЦИЙ ОАО «СБЕРБАНК РОССИИ»]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="100" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="459" splitType="Stretch">
+			<textField>
+				<reportElement x="360" y="10" width="168" height="89"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[new java.lang.String(
+    ($F{payer_info} == null? "": $F{payer_info}) + "\n" +
+    ($F{payer_address} == null? "": $F{payer_address}) + "\n"
+)]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="64" y="120" width="196" height="36"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[О не зачисленных по назначению
+денежных средствах
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="219" y="162" width="181" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Уважаемый плательщик!]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="42" y="189" width="486" height="138"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[new java.lang.String
+("         Настоящим сообщаем, что денежные средства в размере " +
+        $F{sum_rub} + " руб. " + $F{sum_cent} + " коп. по платежу, совершенному " +
+        $F{payment_date} + "г. " +
+        ($F{type}.equals("selfServ")?"через терминал":"") +
+        ($F{type}.equals("sbol")?"по системе Сбербанк Онл@йн":"") +
+        ($F{type}.equals("osb")?new java.lang.String("в ДО " + $F{osb_old} + "/" + $F{filial} + ", оператор " + $F{cashier} + ", операция " + $F{document_number}):"") +
+        " по следующим реквизитам: БИК " + $F{bik} +
+        ", ИНН получателя " + $F{inn} +
+        ", расчетный счет " + $F{settle_acc} +
+        " были отнесены на счет невыясненных платежей, по причине неверных реквизитов получателя в платежном документе.\r\n" +
+ "         Просим Вас обратиться в ближайшее отделение Сбербанка России" +
+        " для составления заявления об уточнении реквизитов или возврата данной суммы. При себе иметь паспорт, квитанцию об оплате, уточненные реквизиты."
+
+)]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="42" y="327" width="486" height="79"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Calibri" size="12" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[         В случае отсутствия обращения с Вашей стороны в течение двух месяцев от даты регистрации данного письма, Банк оставляет за собой право на перечисление вышеуказанных денежных средств по самостоятельно уточненным реквизитам. При невозможности самостоятельного уточнения реквизитов и отсутствии Вашего обращения денежные средства будут списаны в доход Банка.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="20" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="3" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="4" splitType="Stretch"/>
+	</summary>
+</jasperReport>
